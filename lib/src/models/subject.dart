@@ -25,7 +25,7 @@ Map<String, DSBSubject> dsbSubjectMapPretty = {
   'Unbekannt': DSBSubject.unbekannt
 };
 
-Map<String, DSBSubject> dsbSubjectMap = dsbSubjectMapPretty.map((key, value) => MapEntry(key.toLowerCase() != 'Entfällt' ? key.toLowerCase() : '---', value));
+Map<String, DSBSubject> dsbSubjectMap = dsbSubjectMapPretty.map((key, value) => MapEntry(key.toLowerCase() != 'entfällt' ? key.toLowerCase() : '---', value));
 
 Map<DSBSubject, String> dsbSubjectShortPretty = {
   DSBSubject.entfaellt: '-',
